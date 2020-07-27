@@ -17,7 +17,7 @@ apply plugin: 'io.spring.dependency-management'
 
 
 
-g
+
 group 'org.example'
 version '1.0-SNAPSHOT'
 sourceCompatibility=1.8
