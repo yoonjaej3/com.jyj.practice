@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="practice.jyj.com.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-06T16:05:32" hostname="juyunjaeui-MacBookPro.local" time="0.057">
+<testsuite name="practice.jyj.com.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-06T17:23:50" hostname="juyunjaeui-MacBookPro.local" time="0.002">
   <properties/>
-  <testcase name="롬복_기능_테스트" classname="practice.jyj.com.web.dto.HelloResponseDtoTest" time="0.057"/>
+  <testcase name="롬복_기능_테스트" classname="practice.jyj.com.web.dto.HelloResponseDtoTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
