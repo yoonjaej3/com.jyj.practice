@@ -38,35 +38,4 @@ public class PostsApicontrollerTest {
         postsRepository.deleteAll();
     }
 
-    @Test
-    public void Posts_등록된다() throws Exception{
-        //given //테스트 기반 환경 구축하는 단계
-        String title="title";
-        String content="content";
-
-        PostsSaveRequestDto requestDto= PostsSaveRequestDto.builder()
-                .title(title)
-                .content(content)
-                .author("author")
-                .build();
-
-        String url="http://localhost:"+port+"/api/v1/posts";
-
-        //when //내가 테스트 하고자 하는것
-        ResponseEntity<Long> responseEntity=restTemplate.postForEntity(url,requestDto,Long.class);
-
-
-        //then //테스트 결과 검증
-
-        assertThat(responseEntity.getStatusCode()).
-                isEqualTo(HttpStatus.OK);
-
-        assertThat(responseEntity.getBody()).
-                isGreaterThan(0L);
-
-        List<Posts> all= postsRepository.findAll();
-        assertThat(all.get(0).getTitle()).isEqualTo(title);
-        assertThat(all.get(0).getContent()).isEqualTo(content);
-
-    }
 }
